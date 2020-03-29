@@ -22,7 +22,7 @@ Projeto Kotlin Android do livro "Mapas via intenções - Android: Desenvolvedor 
 
 Caso você tenha dúvidas ou dicas sobre os projetos apresentados em livro, então entre em contato com o autor pelo e-mail oficial do [Blog](https://www.thiengo.com.br) e [Canal](https://www.youtube.com/user/thiengoCalopsita) dele: thiengocalopsita@gmail.com.
 
-## Outros livros e curso
+## Outros livros 📚 e curso
 
 Não deixe de conhecer também outros livros e curso do mesmo autor:
 

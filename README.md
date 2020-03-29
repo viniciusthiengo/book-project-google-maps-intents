@@ -2,7 +2,7 @@
 
 Projeto Kotlin Android do livro "X". Projeto apresentado na Parte I do livro, mais precisamente no terceiro capítulo "Destrinchando as intenções de mapas".
 
-[LOGO](https://www.thiengo.com.br/img/system/logo/logo-thiengo-calopsita-70x70.png)
+[github-small](https://www.thiengo.com.br/img/system/logo/logo-thiengo-calopsita-70x70.png)
 
 **Obs. 1:** para o total entendimento do projeto é preciso ter e mãos o livro "X" com o capítulo 3 já aberto, pois as explicações detalhadas estarão nesta seção do livro.
 

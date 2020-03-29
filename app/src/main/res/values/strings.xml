@@ -1,0 +1,92 @@
+<resources>
+    <string name="app_name">Google Maps Intents</string>
+
+    <string name="activity_login_title">Login</string>
+    <string name="inform_activity_purpose">
+        Atividade criada somente para teste do método
+        <b>intencoesExplicitasImplicitIntent_Algoritmo_2()</b> do
+        tópico \"Intenções explícitas (<i>explicit intent</i>)\".
+    </string>
+
+    <string name="book_title">
+        <b>Livro:</b>
+        Mapas via intenções - Android: Desenvolvedor Especialista
+    </string>
+    <string name="book_author">
+        <b>Autor:</b>
+        Vinícius Thiengo
+    </string>
+    <string name="book_isbn">
+        <b>ISBN:</b>
+        PDF: 978-85-924568-6-3 / ePUB: 978-85-924568-7-0 / mobi: 978-85-924568-8-7
+    </string>
+    <string name="book_section">
+        <b>Parte I</b>
+    </string>
+
+    <string name="algorithm">Algoritmo</string>
+    <string name="first_algorithm">1º Algoritmo</string>
+    <string name="second_algorithm">2º Algoritmo</string>
+    <string name="third_algorithm">3º Algoritmo</string>
+    <string name="fourth_algorithm">4º Algoritmo</string>
+
+    <string name="intencoes_explicitas_explicit_intent">
+        Intenções explícitas (<i>explicit intent</i>):
+    </string>
+    <string name="apresentacao_simples_de_um_local_especifico">
+        Apresentação simples de um local específico
+    </string>
+    <string name="evitando_excecoes_quando_a_intencao_nao_puder_ser_respondida">
+        Evitando exceções quando a intenção não puder ser respondida
+    </string>
+    <string name="can_be_hidden_button_inform">
+        O botão abaixo pode ou não ser escondido. O algoritmo
+        que trabalha o \"esconder\" deste botão está no
+        método <b>onCreate()</b> da <b>MainActivity</b>.
+    </string>
+    <string name="can_be_hidden_button">
+        Botão que pode ser escondido!
+    </string>
+    <string name="voce_vai_encontrar_muito_por_ai">
+        Você vai encontrar muito \"por aí\"
+    </string>
+    <string name="busca_por_localizacoes_sintaxe_e_pontos_mais_proximos_do_usuario">
+        Busca por localizações: sintaxe e pontos mais próximos do usuário
+    </string>
+    <string name="trabalhando_o_raio_da_busca_por_localizacao_e_pontos_mais_proximos">
+        Trabalhando o raio da busca por localização e pontos mais próximos
+    </string>
+    <string name="pontos_mais_proximos_de_uma_latitude_e_longitude_definidos">
+        Pontos mais próximos de uma latitude e longitude definidos
+    </string>
+    <string name="busca_por_um_local_especifico">
+        Busca por um local específico
+    </string>
+    <string name="buscando_endereco_de_acordo_com_a_posicao_atual_do_usuario">
+        Buscando endereço de acordo com a posição atual do usuário
+    </string>
+    <string name="buscando_endereco_de_acordo_com_a_latitude_e_longitude_fornecidos">
+        Buscando endereço de acordo com a latitude e longitude fornecidos
+    </string>
+    <string name="definindo_rotulo_para_o_endereco_em_busca">
+        Definindo rótulo para o endereço em busca
+    </string>
+    <string name="apresentando_rota_e_guia_turn_by_turn_gps">
+        Apresentando rota e guia turn-by-turn (GPS)
+    </string>
+    <string name="apresentando_rota_com_definicao_de_meio_de_transporte">
+        Apresentando rota com definição de meio de transporte
+    </string>
+    <string name="apresentando_rota_com_definicao_de_itens_a_evitar">
+        Apresentando rota com definição de itens a evitar
+    </string>
+    <string name="apresentando_rotas_com_o_uso_de_waypoints_pontos_obrigatorios_em_trajeto">
+        Apresentando rotas com o uso de WayPoints (pontos obrigatórios em trajeto)
+    </string>
+    <string name="trabalhando_com_o_street_view">
+        Trabalhando com o Street View
+    </string>
+    <string name="utilizando_plus_code_em_intencoes_de_mapa">
+        Utilizando plus code em intenções de mapa
+    </string>
+</resources>

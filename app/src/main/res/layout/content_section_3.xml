@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- Tópico ➙ Buscando endereço de acordo com a posição atual do usuário -->
+    <LinearLayout
+        style="@style/AppTheme.LinearLayoutWrapperBox">
+
+        <TextView
+            style="@style/AppTheme.TextViewTopicTitle"
+            android:text="@string/buscando_endereco_de_acordo_com_a_posicao_atual_do_usuario" />
+
+        <Button
+            style="@style/AppTheme.Button"
+            android:onClick="buscandoEnderecoDeAcordoComAPosicaoAtualDoUsuario_Algoritmo_1"
+            android:text="@string/algorithm" />
+    </LinearLayout>
+
+    <!-- Tópico ➙ Buscando endereço de acordo com a latitude e longitude fornecidos -->
+    <LinearLayout
+        style="@style/AppTheme.LinearLayoutWrapperBox">
+
+        <TextView
+            style="@style/AppTheme.TextViewTopicTitle"
+            android:text="@string/buscando_endereco_de_acordo_com_a_latitude_e_longitude_fornecidos" />
+
+        <Button
+            style="@style/AppTheme.Button"
+            android:onClick="buscandoEnderecoDeAcordoComALatitudeELongitudeFornecidos_Algoritmo_1"
+            android:text="@string/algorithm" />
+    </LinearLayout>
+
+    <!-- Tópico ➙ Definindo um rótulo para o endereço em busca -->
+    <LinearLayout
+        style="@style/AppTheme.LinearLayoutWrapperBox">
+
+        <TextView
+            style="@style/AppTheme.TextViewTopicTitle"
+            android:text="@string/definindo_rotulo_para_o_endereco_em_busca" />
+
+        <Button
+            style="@style/AppTheme.Button"
+            android:onClick="definindoRotuloParaOEnderecoEmBusca_Algoritmo_1"
+            android:text="@string/algorithm" />
+    </LinearLayout>
+
+    <!-- Tópico ➙ Apresentando rota e guia turn-by-turn (GPS) -->
+    <LinearLayout
+        style="@style/AppTheme.LinearLayoutWrapperBox">
+
+        <TextView
+            style="@style/AppTheme.TextViewTopicTitle"
+            android:text="@string/apresentando_rota_e_guia_turn_by_turn_gps" />
+
+        <Button
+            style="@style/AppTheme.Button"
+            android:onClick="apresentandoRotaEGuiaTurnByTurnGps_Algoritmo_1"
+            android:text="@string/algorithm" />
+    </LinearLayout>
+
+    <ViewStub
+        android:id="@+id/vs_content_section_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout="@layout/content_section_4" />
+</LinearLayout>

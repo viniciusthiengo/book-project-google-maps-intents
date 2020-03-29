@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- Tópico ➙ Apresentando rota com definição de meio de transporte -->
+    <LinearLayout
+        style="@style/AppTheme.LinearLayoutWrapperBox">
+
+        <TextView
+            style="@style/AppTheme.TextViewTopicTitle"
+            android:text="@string/apresentando_rota_com_definicao_de_meio_de_transporte" />
+
+        <Button
+            style="@style/AppTheme.Button"
+            android:onClick="apresentandoRotaComDefinicaoDeMeioDeTransporte_Algoritmo_1"
+            android:text="@string/first_algorithm" />
+
+        <Button
+            style="@style/AppTheme.Button"
+            android:onClick="apresentandoRotaComDefinicaoDeMeioDeTransporte_Algoritmo_2"
+            android:text="@string/second_algorithm" />
+
+        <Button
+            style="@style/AppTheme.Button"
+            android:onClick="apresentandoRotaComDefinicaoDeMeioDeTransporte_Algoritmo_3"
+            android:text="@string/third_algorithm" />
+
+        <Button
+            style="@style/AppTheme.Button"
+            android:onClick="apresentandoRotaComDefinicaoDeMeioDeTransporte_Algoritmo_4"
+            android:text="@string/fourth_algorithm" />
+    </LinearLayout>
+
+    <!-- Tópico ➙ Apresentando rota com definição de itens a evitar -->
+    <LinearLayout
+        style="@style/AppTheme.LinearLayoutWrapperBox">
+
+        <TextView
+            style="@style/AppTheme.TextViewTopicTitle"
+            android:text="@string/apresentando_rota_com_definicao_de_itens_a_evitar" />
+
+        <Button
+            style="@style/AppTheme.Button"
+            android:onClick="apresentandoRotaComDefinicaoDeItensAEvitar_Algoritmo_1"
+            android:text="@string/algorithm" />
+    </LinearLayout>
+
+    <!-- Tópico ➙ Trabalhando com o Street View -->
+    <LinearLayout
+        style="@style/AppTheme.LinearLayoutWrapperBox">
+
+        <TextView
+            style="@style/AppTheme.TextViewTopicTitle"
+            android:text="@string/trabalhando_com_o_street_view" />
+
+        <Button
+            style="@style/AppTheme.Button"
+            android:onClick="trabalhandoComOStreetView_Algoritmo_1"
+            android:text="@string/first_algorithm" />
+
+        <Button
+            style="@style/AppTheme.Button"
+            android:onClick="trabalhandoComOStreetView_Algoritmo_2"
+            android:text="@string/second_algorithm" />
+
+        <Button
+            style="@style/AppTheme.Button"
+            android:onClick="trabalhandoComOStreetView_Algoritmo_3"
+            android:text="@string/third_algorithm" />
+
+        <Button
+            style="@style/AppTheme.Button"
+            android:onClick="trabalhandoComOStreetView_Algoritmo_4"
+            android:text="@string/fourth_algorithm" />
+    </LinearLayout>
+
+    <!-- Tópico ➙ Utilizando plus code em intenções de mapa -->
+    <LinearLayout
+        style="@style/AppTheme.LinearLayoutWrapperBox"
+        android:layout_marginBottom="0dp">
+
+        <TextView
+            style="@style/AppTheme.TextViewTopicTitle"
+            android:text="@string/utilizando_plus_code_em_intencoes_de_mapa" />
+
+        <Button
+            style="@style/AppTheme.Button"
+            android:onClick="utilizandoPlusCodeEmIntencoesDeMapa_Algoritmo_1"
+            android:text="@string/algorithm" />
+    </LinearLayout>
+</LinearLayout>

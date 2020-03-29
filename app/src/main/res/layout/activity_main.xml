@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sv_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorActivitybackground"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <!-- Blocos livro -->
+        <LinearLayout
+            style="@style/AppTheme.LinearLayoutWrapperBox">
+
+            <TextView
+                style="@style/AppTheme.TextViewTopicTitle"
+                android:gravity="start"
+                android:text="@string/book_title" />
+
+            <TextView
+                style="@style/AppTheme.TextViewTopicTitle"
+                android:gravity="start"
+                android:text="@string/book_author" />
+
+            <TextView
+                style="@style/AppTheme.TextViewTopicTitle"
+                android:layout_marginBottom="0dp"
+                android:gravity="start"
+                android:text="@string/book_isbn" />
+        </LinearLayout>
+        <LinearLayout
+            style="@style/AppTheme.LinearLayoutWrapperBox">
+
+            <TextView
+                style="@style/AppTheme.TextViewTopicTitle"
+                android:layout_marginBottom="0dp"
+                android:text="@string/book_section" />
+        </LinearLayout>
+
+        <!-- Tópico ➙ Intenções explícitas (explicit intent) -->
+        <LinearLayout
+            style="@style/AppTheme.LinearLayoutWrapperBox">
+
+            <TextView
+                style="@style/AppTheme.TextViewTopicTitle"
+                android:text="@string/intencoes_explicitas_explicit_intent" />
+
+            <Button
+                style="@style/AppTheme.Button"
+                android:onClick="intencoesExplicitasImplicitIntent_Algoritmo_1"
+                android:text="@string/first_algorithm" />
+
+            <Button
+                style="@style/AppTheme.Button"
+                android:onClick="intencoesExplicitasImplicitIntent_Algoritmo_2"
+                android:text="@string/second_algorithm" />
+
+            <Button
+                style="@style/AppTheme.Button"
+                android:onClick="intencoesExplicitasImplicitIntent_Algoritmo_3"
+                android:text="@string/third_algorithm" />
+        </LinearLayout>
+
+        <!-- Tópico ➙ Apresentação simples de um local específico -->
+        <LinearLayout
+            style="@style/AppTheme.LinearLayoutWrapperBox">
+
+            <TextView
+                style="@style/AppTheme.TextViewTopicTitle"
+                android:text="@string/apresentacao_simples_de_um_local_especifico" />
+
+            <Button
+                style="@style/AppTheme.Button"
+                android:onClick="apresentacaoSimplesDeUmLocalEspecifico_Algoritmo_1"
+                android:text="@string/algorithm" />
+        </LinearLayout>
+
+        <!-- Tópico ➙ Evitando exceções quando a intenção não puder ser respondida -->
+        <LinearLayout
+            style="@style/AppTheme.LinearLayoutWrapperBox">
+
+            <TextView
+                style="@style/AppTheme.TextViewTopicTitle"
+                android:text="@string/evitando_excecoes_quando_a_intencao_nao_puder_ser_respondida" />
+
+            <Button
+                style="@style/AppTheme.Button"
+                android:onClick="evitandoExcecoesQuandoAIntencaoNaoPuderSerRespondida_Algoritmo_1"
+                android:text="@string/first_algorithm" />
+
+            <Button
+                style="@style/AppTheme.Button"
+                android:onClick="evitandoExcecoesQuandoAIntencaoNaoPuderSerRespondida_Algoritmo_2"
+                android:text="@string/second_algorithm" />
+
+            <!--
+                Botão que pode ou não ser escondido com os algoritmos do tópico
+                "Evitando exceções quando a intenção não puder ser respondida"
+                presentes no onCreate() da MainActivity.
+            -->
+            <TextView
+                style="@style/AppTheme.TextViewTopicTitle"
+                android:gravity="start"
+                android:layout_marginTop="8dp"
+                android:text="@string/can_be_hidden_button_inform" />
+
+            <Button
+                android:id="@+id/buttonOpenGoogleMaps"
+                style="@style/AppTheme.Button"
+                android:onClick="evitandoExcecoesQuandoAIntencaoNaoPuderSerRespondida_Algoritmo_1"
+                android:text="@string/can_be_hidden_button" />
+        </LinearLayout>
+
+        <!-- Tópico ➙ Você vai encontrar muito "por aí" -->
+        <LinearLayout
+            style="@style/AppTheme.LinearLayoutWrapperBox">
+
+            <TextView
+                style="@style/AppTheme.TextViewTopicTitle"
+                android:text="@string/voce_vai_encontrar_muito_por_ai" />
+
+            <Button
+                style="@style/AppTheme.Button"
+                android:onClick="voceVaiEncontrarMuitoPorAi_Algoritmo_1"
+                android:text="@string/algorithm" />
+        </LinearLayout>
+
+        <ViewStub
+            android:id="@+id/vs_content_section_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout="@layout/content_section_2" />
+    </LinearLayout>
+</ScrollView>

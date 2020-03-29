@@ -2,8 +2,7 @@
 
 Projeto Kotlin Android do livro "X". Projeto apresentado na Parte I do livro, mais precisamente no terceiro capítulo "Destrinchando as intenções de mapas".
 
-![img-app](https://github.com/viniciusthiengo/book-project-google-maps-intents/blob/master/app/src/main/res/drawable/img_app.png | width=500)
-<img src="https://github.com/viniciusthiengo/book-project-google-maps-intents/blob/master/app/src/main/res/drawable/img_app.png" width="500">
+<img src="https://github.com/viniciusthiengo/book-project-google-maps-intents/blob/master/app/src/main/res/drawable/img_app.png" width="700">
 
 **Obs. 1:** para o total entendimento do projeto é preciso ter e mãos o livro "X" com o capítulo 3 já aberto, pois as explicações detalhadas estarão nesta seção do livro.
 

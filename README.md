@@ -1,16 +1,16 @@
 # Google Maps Intents
 
-Projeto Kotlin Android do livro "Mapas via intenções - Android: Desenvolvedor Especialista". Projeto apresentado na Parte I do livro, mais precisamente no terceiro capítulo "Destrinchando as intenções de mapas".
+Projeto Kotlin Android do livro "Mapas Android de Alta Qualidade - Evoluindo aplicativos". Projeto apresentado na Parte I do livro, mais precisamente no terceiro capítulo "Destrinchando as intenções de mapas".
 
 <img src="https://github.com/viniciusthiengo/book-project-google-maps-intents/blob/master/app/src/main/res/drawable/img_app.png" width="700">
 
-**Obs. 1:** para o total entendimento do projeto é preciso ter em mãos o livro "Mapas via intenções" com o capítulo 3 já aberto, pois as explicações detalhadas estarão nesta seção do livro.
+**Obs. 1:** para o total entendimento do projeto é preciso ter em mãos o livro "Mapas Android de Alta Qualidade" com o capítulo 3 já aberto, pois as explicações detalhadas estarão nesta seção do livro.
 
 **Obs. 2:** pode ser que você tenha dúvidas em relação ao componente `ViewStub` que também é utilizado em projeto, mas não tem relação alguma com o assunto principal do livro. Se isso ocorrer e você quiser saber mais sobre `ViewStub` no Android, então acesse o artigo completo [Tags Merge e ViewStub Para Otimizar Sua APP Android](https://www.thiengo.com.br/tags-merge-e-viewstub-para-otimizar-sua-app-android).
 
 ## Dados livro
 
-"Mapas via intenções - Android: Desenvolvedor Especialista" - 1ª edição
+"Mapas Android de Alta Qualidade - Evoluindo aplicativos" - 1ª edição
 
 **Autor:** Vinícius Thiengo
 

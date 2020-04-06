@@ -13,7 +13,7 @@ import kotlinx.android.synthetic.main.content_section_3.*
 
 
 /*
- * Livro: Mapas via intenções - Android: Desenvolvedor Especialista.
+ * Livro: Mapas Android de Alta Qualidade - Evoluindo aplicativos.
  *
  * Autor: Vinícius Thiengo.
  *

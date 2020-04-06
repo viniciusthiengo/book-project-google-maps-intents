@@ -2,7 +2,7 @@
 
 Projeto Kotlin Android do livro "Mapas Android de Alta Qualidade - Evoluindo aplicativos". Projeto apresentado na Parte I do livro, mais precisamente no terceiro capítulo "Destrinchando as intenções de mapas".
 
-<img src="https://github.com/viniciusthiengo/book-project-google-maps-intents/blob/master/app/src/main/res/drawable/img_app.png" width="700">
+<img src="https://www.thiengo.com.br/img/livro/mapas-android-de-alta-qualidade-evoluindo-aplicativos/github/parte-1-github.png" width="700">
 
 **Obs. 1:** para o total entendimento do projeto é preciso ter em mãos o livro "Mapas Android de Alta Qualidade" com o capítulo 3 já aberto, pois as explicações detalhadas estarão nesta seção do livro.
 

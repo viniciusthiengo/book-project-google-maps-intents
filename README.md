@@ -18,6 +18,10 @@ Projeto Kotlin Android do livro "Mapas Android de Alta Qualidade - Evoluindo apl
 
 **Página para adquirir o livro:** https://www.thiengo.com.br/livro-desenvolvedor-kotlin-android
 
+## Parte II
+
+Para acessar o repositório do projeto da Parte II do livro entre em: [Repositório projeto Parte II](https://github.com/viniciusthiengo/book-project-mariah-salao-de-beleza)
+
 ## Dúvidas e dicas
 
 Caso você tenha dúvidas ou dicas sobre os projetos apresentados em livro, então entre em contato com o autor pelo e-mail oficial do [Blog](https://www.thiengo.com.br) e [Canal](https://www.youtube.com/user/thiengoCalopsita) dele: thiengocalopsita@gmail.com.

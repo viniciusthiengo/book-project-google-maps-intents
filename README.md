@@ -10,7 +10,7 @@ Projeto Kotlin Android do livro "Mapas Android de Alta Qualidade - Evoluindo apl
 
 ### Parte II
 
-Para acessar o repositório do projeto da Parte II do livro entre em: [Repositório projeto Parte II](https://github.com/viniciusthiengo/book-project-mariah-salao-de-beleza)
+Para acessar o repositório do projeto da Parte II do livro entre em: [Repositório projeto Android - Parte II](https://github.com/viniciusthiengo/book-project-mariah-salao-de-beleza)
 
 ## Dados livro
 

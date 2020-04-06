@@ -8,6 +8,10 @@ Projeto Kotlin Android do livro "Mapas Android de Alta Qualidade - Evoluindo apl
 
 **Obs. 2:** pode ser que você tenha dúvidas em relação ao componente `ViewStub` que também é utilizado em projeto, mas não tem relação alguma com o assunto principal do livro. Se isso ocorrer e você quiser saber mais sobre `ViewStub` no Android, então acesse o artigo completo [Tags Merge e ViewStub Para Otimizar Sua APP Android](https://www.thiengo.com.br/tags-merge-e-viewstub-para-otimizar-sua-app-android).
 
+### Parte II
+
+Para acessar o repositório do projeto da Parte II do livro entre em: [Repositório projeto Parte II](https://github.com/viniciusthiengo/book-project-mariah-salao-de-beleza)
+
 ## Dados livro
 
 "Mapas Android de Alta Qualidade - Evoluindo aplicativos" - 1ª edição
@@ -17,10 +21,6 @@ Projeto Kotlin Android do livro "Mapas Android de Alta Qualidade - Evoluindo apl
 **ISBN:** PDF ➙ 978-85-924568-6-3 | ePUB ➙ 978-85-924568-7-0 | mobi ➙ 978-85-924568-8-7
 
 **Página para adquirir o livro:** https://www.thiengo.com.br/livro-desenvolvedor-kotlin-android
-
-## Parte II
-
-Para acessar o repositório do projeto da Parte II do livro entre em: [Repositório projeto Parte II](https://github.com/viniciusthiengo/book-project-mariah-salao-de-beleza)
 
 ## Dúvidas e dicas
 

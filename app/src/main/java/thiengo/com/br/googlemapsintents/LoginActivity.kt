@@ -19,5 +19,4 @@ class LoginActivity : AppCompatActivity() {
         setSupportActionBar( toolbar )
         supportActionBar?.setDisplayHomeAsUpEnabled( true )
     }
-
 }

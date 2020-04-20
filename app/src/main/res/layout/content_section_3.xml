@@ -19,6 +19,7 @@
             android:text="@string/algorithm" />
     </LinearLayout>
 
+
     <!-- Tópico ➙ Buscando endereço de acordo com a latitude e longitude fornecidos -->
     <LinearLayout
         style="@style/AppTheme.LinearLayoutWrapperBox">
@@ -32,6 +33,7 @@
             android:onClick="buscandoEnderecoDeAcordoComALatitudeELongitudeFornecidos_Algoritmo_1"
             android:text="@string/algorithm" />
     </LinearLayout>
+
 
     <!-- Tópico ➙ Definindo um rótulo para o endereço em busca -->
     <LinearLayout
@@ -47,6 +49,7 @@
             android:text="@string/algorithm" />
     </LinearLayout>
 
+
     <!-- Tópico ➙ Apresentando rota e guia turn-by-turn (GPS) -->
     <LinearLayout
         style="@style/AppTheme.LinearLayoutWrapperBox">
@@ -60,6 +63,7 @@
             android:onClick="apresentandoRotaEGuiaTurnByTurnGps_Algoritmo_1"
             android:text="@string/algorithm" />
     </LinearLayout>
+
 
     <ViewStub
         android:id="@+id/vs_content_section_4"

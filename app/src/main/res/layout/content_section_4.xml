@@ -34,6 +34,7 @@
             android:text="@string/fourth_algorithm" />
     </LinearLayout>
 
+
     <!-- Tópico ➙ Apresentando rota com definição de itens a evitar -->
     <LinearLayout
         style="@style/AppTheme.LinearLayoutWrapperBox">
@@ -47,6 +48,27 @@
             android:onClick="apresentandoRotaComDefinicaoDeItensAEvitar_Algoritmo_1"
             android:text="@string/algorithm" />
     </LinearLayout>
+
+
+    <!-- Tópico ➙ Apresentando rotas com o uso de WayPoints (pontos obrigatórios em trajeto) -->
+    <LinearLayout
+        style="@style/AppTheme.LinearLayoutWrapperBox">
+
+        <TextView
+            style="@style/AppTheme.TextViewTopicTitle"
+            android:text="@string/apresentando_rotas_com_o_uso_de_waypoints_pontos_obrigatorios_em_trajeto" />
+
+        <Button
+            style="@style/AppTheme.Button"
+            android:onClick="apresentandoRotasComOUsoDeWaypointsPontosObrigatoriosEmTrajeto_Algoritmo_1"
+            android:text="@string/first_algorithm" />
+
+        <Button
+            style="@style/AppTheme.Button"
+            android:onClick="apresentandoRotasComOUsoDeWaypointsPontosObrigatoriosEmTrajeto_Algoritmo_2"
+            android:text="@string/second_algorithm" />
+    </LinearLayout>
+
 
     <!-- Tópico ➙ Trabalhando com o Street View -->
     <LinearLayout
@@ -76,6 +98,7 @@
             android:onClick="trabalhandoComOStreetView_Algoritmo_4"
             android:text="@string/fourth_algorithm" />
     </LinearLayout>
+
 
     <!-- Tópico ➙ Utilizando plus code em intenções de mapa -->
     <LinearLayout

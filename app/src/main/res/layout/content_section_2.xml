@@ -19,6 +19,7 @@
             android:text="@string/algorithm" />
     </LinearLayout>
 
+
     <!-- Tópico ➙ Trabalhando o raio da busca por localização e pontos mais próximos -->
     <LinearLayout
         style="@style/AppTheme.LinearLayoutWrapperBox">
@@ -33,6 +34,7 @@
             android:text="@string/algorithm" />
     </LinearLayout>
 
+
     <!-- Tópico ➙ Pontos mais próximos de uma latitude e longitude definidos -->
     <LinearLayout
         style="@style/AppTheme.LinearLayoutWrapperBox">
@@ -46,6 +48,7 @@
             android:onClick="pontosMaisProximosDeUmaLatitudeELongitudeDefinidos_Algoritmo_1"
             android:text="@string/algorithm" />
     </LinearLayout>
+
 
     <!-- Tópico ➙ Busca por um local específico -->
     <LinearLayout

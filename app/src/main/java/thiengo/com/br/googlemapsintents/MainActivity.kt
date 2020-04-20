@@ -1,26 +1,18 @@
 package thiengo.com.br.googlemapsintents
 
+import android.app.AlertDialog
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.view.ViewTreeObserver.OnScrollChangedListener
-import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.content_section_2.*
 import kotlinx.android.synthetic.main.content_section_3.*
 
 
-/*
- * Livro: Mapas Android de Alta Qualidade - Evoluindo aplicativos.
- *
- * Autor: Vinícius Thiengo.
- *
- * ISBN: PDF ➙ 978-85-924568-6-3 / ePUB ➙ 978-85-924568-7-0 / mobi ➙ 978-85-924568-8-7
- *
- * Parte I
- * */
 class MainActivity : AppCompatActivity(), OnScrollChangedListener {
 
     override fun onCreate( savedInstanceState: Bundle? ) {
@@ -37,21 +29,20 @@ class MainActivity : AppCompatActivity(), OnScrollChangedListener {
          * possível esconder ou não o botão que permite o acionamento
          * do mapa no Google Maps.
          * */
-            /*val intent = getMapIntent()
+        /*val intent = getMapIntent()
+        if( intent.resolveActivity( packageManager ) != null ){
+            buttonOpenGoogleMaps.visibility = View.VISIBLE
+        }
+        else{
+            buttonOpenGoogleMaps.visibility = View.GONE
+        }*/
 
-            if( intent.resolveActivity( packageManager ) != null ){
-                buttonOpenGoogleMaps.visibility = View.VISIBLE
-            }
-            else{
-                buttonOpenGoogleMaps.visibility = View.GONE
-            }*/
-
-            /*val intent = getMapIntent()
-
-            if( intent.resolveActivity( packageManager ) == null ){
-                openDownloadMapsAppDialog()
-            }*/
+        /*val intent = getMapIntent()
+        if( intent.resolveActivity( packageManager ) == null ){
+            openDownloadMapsAppDialog()
+        }*/
     }
+
 
     /*
      * Método listener do ScrollView para que seja possível carregar os
@@ -75,13 +66,14 @@ class MainActivity : AppCompatActivity(), OnScrollChangedListener {
         }
     }
 
+
     /*
      * Tópico ➙ Intenções explícitas (explicit intent)
      * */
     fun intencoesExplicitasImplicitIntent_Algoritmo_1( view: View ){
         /*
-         * Somente uma ação (visualização, Intent.ACTION_VIEW) e o dado para a
-         * ação (Uri presente em thiengoComBr) foram definidos na intenção
+         * Somente uma ação (visualização, Intent.ACTION_VIEW) e o dado para a
+         * ação (Uri presente em thiengoComBr) foram definidos na intenção
          * (webIntent).
          * */
         val thiengoComBr = Uri.parse( "https://www.thiengo.com.br" )
@@ -90,7 +82,7 @@ class MainActivity : AppCompatActivity(), OnScrollChangedListener {
     }
     fun intencoesExplicitasImplicitIntent_Algoritmo_2( view: View ){
         /*
-         * Apesar de não haver a definição explícita de uma ação e também o
+         * Apesar de não haver a definição explícita de uma ação e também o
          * armazenamento de algum dado, apesar disso a entidade de destino
          * foi definida (LoginActivity::class.java).
          * */
@@ -110,6 +102,7 @@ class MainActivity : AppCompatActivity(), OnScrollChangedListener {
         routeIntent.setPackage( "com.google.android.apps.maps" )
         startActivity( routeIntent )
     }
+
 
     /*
      * Tópico ➙ Apresentação simples de um local específico
@@ -140,10 +133,12 @@ class MainActivity : AppCompatActivity(), OnScrollChangedListener {
         startActivity( intent )
     }
 
+
     /*
      * Tópico ➙ Evitando exceções quando a intenção não puder ser respondida
      * */
     fun evitandoExcecoesQuandoAIntencaoNaoPuderSerRespondida_Algoritmo_1( view: View ){
+
         val latitudeLongitude = "-20.192710,-40.266240"
         val zoom = 15
         val geo = "geo:$latitudeLongitude?z=$zoom"
@@ -206,7 +201,7 @@ class MainActivity : AppCompatActivity(), OnScrollChangedListener {
 
         intent.setPackage( "com.google.android.apps.maps" )
 
-        if( intent.resolveActivity( packageManager ) != null ){
+        if( intent.resolveActivity( packageManager ) == null ){
             /*
              * Utilizando a sintaxe genérica do Google Maps, Maps URLs.
              * Assim é certo que a versão Web do Google Maps será ao
@@ -229,7 +224,7 @@ class MainActivity : AppCompatActivity(), OnScrollChangedListener {
             .Builder( this )
             .setMessage(
                 "Instalar aplicativo do Google " +
-                    "Maps para visualizar a rota."
+                "Maps para visualizar a rota."
             )
             .setPositiveButton(
                 "Instalar",
@@ -268,6 +263,7 @@ class MainActivity : AppCompatActivity(), OnScrollChangedListener {
             .show()
     }
 
+
     /*
      * Tópico ➙ Você vai encontrar muito "por aí"
      * */
@@ -292,7 +288,7 @@ class MainActivity : AppCompatActivity(), OnScrollChangedListener {
                  * em blocos de código lambda quando se espera
                  * somente um parâmetro.
                  * */
-                    geoUri -> Intent( Intent.ACTION_VIEW, geoUri )
+                geoUri -> Intent( Intent.ACTION_VIEW, geoUri )
             }
             .apply{
                 /*
@@ -307,17 +303,17 @@ class MainActivity : AppCompatActivity(), OnScrollChangedListener {
                  * como em "setPackage()", ou utilizar a palavra
                  * reservada "this" como em "this.setPackage()".
                  * */
-                setPackage( "com.google.android.apps.maps" )
+                this.setPackage( "com.google.android.apps.maps" )
             }
 
         if( intent.resolveActivity( packageManager ) == null ){
 
             intent = Uri.parse(
                 "https://play.google.com/store/apps/" +
-                        "details?id=com.google.android.apps.maps"
-            )
+                    "details?id=com.google.android.apps.maps"
+                )
                 .let{
-                        pageAppUri -> Intent( Intent.ACTION_VIEW, pageAppUri )
+                    pageAppUri -> Intent( Intent.ACTION_VIEW, pageAppUri )
                 }
                 .apply{
                     setPackage( "com.android.vending" )
@@ -326,6 +322,7 @@ class MainActivity : AppCompatActivity(), OnScrollChangedListener {
 
         startActivity( intent )
     }
+
 
     /*
      * Tópico ➙ Busca por localizações: sintaxe e pontos mais próximos do usuário
@@ -347,6 +344,7 @@ class MainActivity : AppCompatActivity(), OnScrollChangedListener {
         startActivity( intent )
     }
 
+
     /*
      * Tópico ➙ Trabalhando o raio da busca por localização e pontos mais próximos
      * */
@@ -362,6 +360,7 @@ class MainActivity : AppCompatActivity(), OnScrollChangedListener {
         intent.setPackage( "com.google.android.apps.maps" )
         startActivity( intent )
     }
+
 
     /*
      * Tópico ➙ Pontos mais próximos de uma latitude e longitude definidos
@@ -382,6 +381,7 @@ class MainActivity : AppCompatActivity(), OnScrollChangedListener {
         intent.setPackage( "com.google.android.apps.maps" )
         startActivity( intent )
     }
+
 
     /*
      * Tópico ➙ Busca por um local específico
@@ -408,6 +408,7 @@ class MainActivity : AppCompatActivity(), OnScrollChangedListener {
         startActivity( intent )
     }
 
+
     /*
      * Tópico ➙ Buscando endereço de acordo com a posição atual do usuário
      * */
@@ -423,6 +424,7 @@ class MainActivity : AppCompatActivity(), OnScrollChangedListener {
         intent.setPackage( "com.google.android.apps.maps" )
         startActivity( intent )
     }
+
 
     /*
      * Tópico ➙ Buscando endereço de acordo com a latitude e longitude fornecidos
@@ -446,6 +448,7 @@ class MainActivity : AppCompatActivity(), OnScrollChangedListener {
         startActivity( intent )
     }
 
+
     /*
      * Tópico ➙ Definindo um rótulo para o endereço em busca
      * */
@@ -464,6 +467,7 @@ class MainActivity : AppCompatActivity(), OnScrollChangedListener {
         startActivity( intent )
     }
 
+
     /*
      * Tópico ➙ Apresentando rota e guia turn-by-turn (GPS)
      * */
@@ -480,6 +484,7 @@ class MainActivity : AppCompatActivity(), OnScrollChangedListener {
         startActivity( intent )
     }
 
+
     /*
      * Tópico ➙ Apresentando rota com definição de meio de transporte
      * */
@@ -487,7 +492,7 @@ class MainActivity : AppCompatActivity(), OnScrollChangedListener {
 
         val address = "Shopping Vitória, Vitória, Espírito Santo, Brasil"
         val location = Uri.encode( address )
-        val mode = "b" // Bicicleta.
+        val mode = "l" // Bicicleta.
         val navigation = "google.navigation:q=$location&mode=$mode"
 
         val navigationUri = Uri.parse( navigation )
@@ -512,11 +517,12 @@ class MainActivity : AppCompatActivity(), OnScrollChangedListener {
     }
     fun apresentandoRotaComDefinicaoDeMeioDeTransporte_Algoritmo_3( view: View ){
 
+        val origin = "Brasilândia, São Paulo, São Paulo, Brasil"
         val address = "Água Branca, São Paulo, São Paulo, Brasil"
         val location = Uri.encode( address )
         val mode = "transit" // Transporte público.
         val navigation = "https://www.google.com/maps/dir/?api=1&" +
-                "destination=$location&travelmode=$mode"
+                "destination=$location&travelmode=$mode&origin=$origin"
 
         val navigationUri = Uri.parse( navigation )
         val intent = Intent( Intent.ACTION_VIEW, navigationUri )
@@ -539,6 +545,7 @@ class MainActivity : AppCompatActivity(), OnScrollChangedListener {
         startActivity( intent )
     }
 
+
     /*
      * Tópico ➙ Apresentando rota com definição de itens a evitar
      * */
@@ -558,6 +565,7 @@ class MainActivity : AppCompatActivity(), OnScrollChangedListener {
         startActivity( intent )
     }
 
+
     /*
      * Tópico ➙ Apresentando rotas com o uso de WayPoints (pontos obrigatórios em trajeto)
      * */
@@ -570,7 +578,7 @@ class MainActivity : AppCompatActivity(), OnScrollChangedListener {
 
         /*
          * travelmode aceita os valore: driving (dirigindo); walking (andando);
-         * bicycling (ciclismo); ou transit (transporte de viagem - ônibus,
+         * bicycling (ciclismo); ou transit (transporte público ou de viagem - ônibus,
          * por exemplo).
          * */
         val mode = "travelmode=driving"
@@ -649,6 +657,7 @@ class MainActivity : AppCompatActivity(), OnScrollChangedListener {
         startActivity( intent )
     }
 
+
     /*
      * Tópico ➙ Trabalhando com o Street View
      * */
@@ -712,6 +721,7 @@ class MainActivity : AppCompatActivity(), OnScrollChangedListener {
         intent.setPackage( "com.google.android.apps.maps" )
         startActivity( intent )
     }
+
 
     /*
      * Tópico ➙ Utilizando plus code em intenções de mapa

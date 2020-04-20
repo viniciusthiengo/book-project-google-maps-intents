@@ -13,6 +13,7 @@
         android:orientation="vertical"
         android:padding="12dp">
 
+
         <!-- Blocos livro -->
         <LinearLayout
             style="@style/AppTheme.LinearLayoutWrapperBox">
@@ -42,6 +43,7 @@
                 android:text="@string/book_section" />
         </LinearLayout>
 
+
         <!-- Tópico ➙ Intenções explícitas (explicit intent) -->
         <LinearLayout
             style="@style/AppTheme.LinearLayoutWrapperBox">
@@ -54,17 +56,16 @@
                 style="@style/AppTheme.Button"
                 android:onClick="intencoesExplicitasImplicitIntent_Algoritmo_1"
                 android:text="@string/first_algorithm" />
-
             <Button
                 style="@style/AppTheme.Button"
                 android:onClick="intencoesExplicitasImplicitIntent_Algoritmo_2"
                 android:text="@string/second_algorithm" />
-
             <Button
                 style="@style/AppTheme.Button"
                 android:onClick="intencoesExplicitasImplicitIntent_Algoritmo_3"
                 android:text="@string/third_algorithm" />
         </LinearLayout>
+
 
         <!-- Tópico ➙ Apresentação simples de um local específico -->
         <LinearLayout
@@ -79,6 +80,7 @@
                 android:onClick="apresentacaoSimplesDeUmLocalEspecifico_Algoritmo_1"
                 android:text="@string/algorithm" />
         </LinearLayout>
+
 
         <!-- Tópico ➙ Evitando exceções quando a intenção não puder ser respondida -->
         <LinearLayout
@@ -116,6 +118,7 @@
                 android:text="@string/can_be_hidden_button" />
         </LinearLayout>
 
+
         <!-- Tópico ➙ Você vai encontrar muito "por aí" -->
         <LinearLayout
             style="@style/AppTheme.LinearLayoutWrapperBox">
@@ -129,6 +132,7 @@
                 android:onClick="voceVaiEncontrarMuitoPorAi_Algoritmo_1"
                 android:text="@string/algorithm" />
         </LinearLayout>
+
 
         <ViewStub
             android:id="@+id/vs_content_section_2"

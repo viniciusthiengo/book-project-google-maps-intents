@@ -22,7 +22,7 @@ Para acessar o repositório do projeto da Parte II do livro entre em: [Repositó
 
 **Página para adquirir o livro:** https://www.thiengo.com.br/livro-desenvolvedor-kotlin-android
 
-<img src="https://www.thiengo.com.br/img/livro/mapas-android-de-alta-qualidade-evoluindo-aplicativos/github/capas-livro-mapas-android-de-alta-qualidade.jpg" alt="Capas do livro Mapas Android de Alta Qualidade - Masterização Android" width="390">
+<img src="https://www.thiengo.com.br/img/livro/mapas-android-de-alta-qualidade/github/capas-livro-mapas-android-de-alta-qualidade.jpg" alt="Capas do livro Mapas Android de Alta Qualidade - Masterização Android" width="390">
 
 ## Dúvidas e dicas
 

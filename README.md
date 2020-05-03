@@ -1,6 +1,8 @@
 # Google Maps Intents
 
-Projeto Kotlin Android do livro "Mapas Android de Alta Qualidade - Masterização Android". Projeto apresentado na Parte I do livro, mais precisamente no terceiro capítulo "Destrinchando as intenções de mapas".
+Projeto Kotlin Android do livro "Mapas Android de Alta Qualidade - Masterização Android".
+
+Projeto apresentado na Parte I do livro, mais precisamente no terceiro capítulo "Destrinchando as intenções de mapas".
 
 <img src="https://www.thiengo.com.br/img/livro/mapas-android-de-alta-qualidade/github/projeto-android-parte-1-livro-mapas-android-de-alta-qualidade.png" alt="Projeto Android da primeira parte do livro" width="700">
 

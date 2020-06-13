@@ -1,4 +1,4 @@
-# Google Maps Intents
+# Projeto Android da Primeira Parte do Livro
 
 Projeto Kotlin Android do livro "Mapas Android de Alta Qualidade - Masterização Android".
 
